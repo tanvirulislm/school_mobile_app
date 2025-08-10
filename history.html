@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment History - Student Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-sm mx-auto bg-gray-50 min-h-screen">
+      <header class="bg-[#003867] p-4 sticky top-0 z-10">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-white rounded-md flex items-center justify-center">
+              <i class="fa-solid fa-user text-2xl text-[#003867]"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-50 truncate">Mahfuzur Rahman</p>
+              <p class="text-xs text-gray-200">Class Two-Boys | Roll No. 2</p>
+            </div>
+          </div>
+          <p class="bg-white text-[#003867] px-4 py-[4px] rounded-md text-sm font-medium">ID 0123141</p>
+        </div>
+      </header>
+
+      <main class="pb-24">
+        <div class="p-4 bg-white border-b">
+          <h1 class="text-xl font-bold text-gray-800">Payment History</h1>
+          <p class="text-sm text-gray-500">Review all your recent transactions.</p>
+        </div>
+
+        <section class="p-4">
+          <div class="flex items-center space-x-2">
+            <select class="flex-grow bg-white border border-gray-300 rounded-lg text-sm px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#003867]">
+              <option>August 2025</option>
+              <option>July 2025</option>
+              <option>June 2025</option>
+            </select>
+            <button class="bg-[#003867] text-white px-3 py-2 rounded-lg">
+              <i class="fa-solid fa-filter"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="px-4 space-y-5">
+          <div>
+            <p class="text-sm font-semibold text-gray-500 mb-2">Today, August 10, 2025</p>
+            <div class="space-y-3">
+              <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <i class="fa-solid fa-utensils text-green-600"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-gray-800">Canteen Purchase</p>
+                    <p class="text-xs text-gray-500">TrxID: CP84620</p>
+                  </div>
+                </div>
+                <p class="font-bold text-lg text-green-600">- ৳75</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-sm font-semibold text-gray-500 mb-2">July 2025</p>
+            <div class="space-y-3">
+              <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-down text-green-600"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-gray-800">Tuition Fee Paid</p>
+                    <p class="text-xs text-gray-500">July 25, 2025</p>
+                  </div>
+                </div>
+                <p class="font-bold text-lg text-green-600">- ৳1,200</p>
+              </div>
+              <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                    <i class="fa-solid fa-file-invoice text-red-600"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-gray-800">Exam Fee Generated</p>
+                    <p class="text-xs text-gray-500">July 10, 2025</p>
+                  </div>
+                </div>
+                <p class="font-bold text-lg text-red-600">+ ৳300</p>
+              </div>
+              <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                    <i class="fa-solid fa-file-invoice-dollar text-red-600"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-gray-800">Tuition Fee Generated</p>
+                    <p class="text-xs text-gray-500">July 01, 2025</p>
+                  </div>
+                </div>
+                <p class="font-bold text-lg text-red-600">+ ৳1,200</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <nav class="fixed bottom-0 left-0 right-0 max-w-sm mx-auto bg-white border-t border-gray-200">
+        <div class="flex justify-around h-16 items-center">
+          <a href="index.html" class="flex flex-col items-center text-gray-500">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="text-xs">Home</span>
+          </a>
+          <a href="history.html" class="flex flex-col items-center text-[#003867]">
+            <i class="fa-solid fa-history text-xl"></i>
+            <span class="text-xs font-semibold">History</span>
+          </a>
+          <a href="profile.html" class="flex flex-col items-center text-gray-500">
+            <i class="fa-regular fa-circle-user text-xl"></i>
+            <span class="text-xs">Account</span>
+          </a>
+          <a href="#" class="flex flex-col items-center text-gray-500">
+            <i class="fa-solid fa-inbox text-xl"></i>
+            <span class="text-xs">Inbox</span>
+          </a>
+          <a href="more.html" class="flex flex-col items-center text-gray-500">
+            <i class="fa-solid fa-bars text-xl"></i>
+            <span class="text-xs">More</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

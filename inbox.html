@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inbox - Student Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-sm mx-auto bg-gray-100 min-h-screen">
+      <header class="bg-[#003867] p-4 sticky top-0 z-10">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-white rounded-md flex items-center justify-center">
+              <i class="fa-solid fa-user text-2xl text-[#003867]"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-50 truncate">Mahfuzur Rahman</p>
+              <p class="text-xs text-gray-200">Class Two-Boys | Roll No. 2</p>
+            </div>
+          </div>
+          <p class="bg-white text-[#003867] px-4 py-[4px] rounded-md text-sm font-medium">ID 0123141</p>
+        </div>
+      </header>
+
+      <main class="pb-24">
+        <div class="p-4 bg-white border-b flex justify-between items-center">
+          <h1 class="text-xl font-bold text-gray-800">Inbox</h1>
+          <a href="#" class="text-sm font-semibold text-blue-600">Mark all as read</a>
+        </div>
+
+        <div class="p-4 flex space-x-2">
+          <button class="bg-[#003867] text-white text-sm font-semibold px-4 py-2 rounded-full">All</button>
+          <button class="bg-white border text-gray-600 text-sm font-semibold px-4 py-2 rounded-full">Unread</button>
+        </div>
+
+        <div class="px-4 space-y-3">
+          <a href="#" class="block bg-blue-50 p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-yellow-100 flex-shrink-0 flex items-center justify-center">
+                <i class="fa-solid fa-chalkboard-user text-yellow-600"></i>
+              </div>
+              <div class="flex-grow">
+                <p class="font-bold text-gray-800">New Comment from Mr. Karim</p>
+                <p class="text-sm text-gray-700 mt-1 truncate">"Excellent work on the latest math assignment, Mahfuzur! Keep it up."</p>
+                <p class="text-xs text-gray-500 mt-2">5 minutes ago</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block bg-white p-4 rounded-lg shadow-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center">
+                <i class="fa-solid fa-graduation-cap text-green-600"></i>
+              </div>
+              <div class="flex-grow">
+                <p class="font-semibold text-gray-700">Result Published</p>
+                <p class="text-sm text-gray-600 mt-1">Your half-yearly exam result is now available to view.</p>
+                <p class="text-xs text-gray-500 mt-2">2 hours ago</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block bg-blue-50 p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-indigo-100 flex-shrink-0 flex items-center justify-center">
+                <i class="fa-solid fa-bullhorn text-indigo-600"></i>
+              </div>
+              <div class="flex-grow">
+                <p class="font-bold text-gray-800">Upcoming Sports Day</p>
+                <p class="text-sm text-gray-700 mt-1 truncate">Reminder: The annual sports day event will be held on August 15th.</p>
+                <p class="text-xs text-gray-500 mt-2">Yesterday at 4:30 PM</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block bg-white p-4 rounded-lg shadow-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center">
+                <i class="fa-solid fa-file-invoice-dollar text-red-600"></i>
+              </div>
+              <div class="flex-grow">
+                <p class="font-semibold text-gray-700">Fee Payment Reminder</p>
+                <p class="text-sm text-gray-600 mt-1">This is a reminder that the tuition fee for September is due.</p>
+                <p class="text-xs text-gray-500 mt-2">August 08, 2025</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <nav class="fixed bottom-0 left-0 right-0 max-w-sm mx-auto bg-white border-t border-gray-200">
+        <div class="flex justify-around h-16 items-center">
+          <a href="index.html" class="flex flex-col items-center text-gray-500">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="text-xs">Home</span>
+          </a>
+          <a href="history.html" class="flex flex-col items-center text-gray-500">
+            <i class="fa-solid fa-history text-xl"></i>
+            <span class="text-xs">History</span>
+          </a>
+          <a href="profile.html" class="flex flex-col items-center text-gray-500">
+            <i class="fa-regular fa-circle-user text-xl"></i>
+            <span class="text-xs">Account</span>
+          </a>
+          <a href="inbox.html" class="flex flex-col items-center text-[#003867]">
+            <i class="fa-solid fa-inbox text-xl"></i>
+            <span class="text-xs font-semibold">Inbox</span>
+          </a>
+          <a href="more.html" class="flex flex-col items-center text-gray-500">
+            <i class="fa-solid fa-bars text-xl"></i>
+            <span class="text-xs">More</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
