@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upay Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #d1d5db;
+      }
+
+      .app-container {
+        max-width: 384px;
+        background-color: white;
+        min-height: 100vh;
+      }
+
+      .header-bg {
+        background-color: #003867;
+      }
+
+      .main-bg {
+        background-color: #f9fafb;
+      }
+
+      .profile-avatar {
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        color: #eab308;
+      }
+
+      .student-id {
+        background-color: white;
+        color: #003867;
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+
+      .section-title {
+        color: #003867;
+        font-weight: bold;
+        font-size: 1.125rem;
+      }
+
+      .guardian-avatar {
+        width: 64px;
+        height: 64px;
+        background-color: #e5e7eb;
+        color: #6b7280;
+      }
+
+      .guardian-name {
+        font-weight: bold;
+        font-size: 0.875rem;
+      }
+
+      .guardian-relation {
+        font-size: 0.75rem;
+        color: #6b7280;
+      }
+
+      .guardian-phone {
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin-top: 0.25rem;
+      }
+
+      .contact-icon {
+        width: 16px;
+        text-align: center;
+        color: #6b7280;
+      }
+
+      .info-label {
+        color: #6b7280;
+      }
+
+      .info-value {
+        font-weight: 600;
+        color: #1f2937;
+      }
+
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 384px;
+        background-color: white;
+        border-top: 1px solid #e5e7eb;
+        height: 64px;
+      }
+
+      .nav-item {
+        color: #6b7280;
+        text-decoration: none;
+      }
+
+      .nav-item.active {
+        color: #003867;
+        font-weight: 600;
+      }
+
+      .nav-item i {
+        font-size: 20px;
+      }
+
+      .nav-item.active i {
+        font-size: 24px;
+      }
+
+      .custom-btn {
+        background-color: white;
+        border: 1px solid #d1d5db;
+        color: #374151;
+        font-weight: 600;
+      }
+
+      .custom-btn:hover {
+        background-color: #f9fafb;
+      }
+
+      .pb-24 {
+        padding-bottom: 6rem;
+      }
+
+      .space-y-6 > * + * {
+        margin-top: 1.5rem;
+      }
+
+      .space-y-3 > * + * {
+        margin-top: 0.75rem;
+      }
+
+      .space-y-2 > * + * {
+        margin-top: 0.5rem;
+      }
+
+      .space-y-1 > * + * {
+        margin-top: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mx-auto app-container">
+      <header class="header-bg p-3">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="profile-avatar rounded d-flex align-items-center justify-content-center me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-100 w-auto" style="height: 32px" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <p class="fw-semibold text-white mb-0 small text-truncate">Mahfuzur Rahman</p>
+              <p class="text-white-50 mb-0" style="font-size: 0.75rem">Class Two-Boys | Roll No. 2</p>
+            </div>
+          </div>
+          <div class="student-id px-3 py-1 rounded">ID 0123141</div>
+        </div>
+      </header>
+
+      <main class="p-3 main-bg space-y-6 pb-5">
+        <div class="bg-white p-4 rounded shadow-sm border">
+          <h2 class="section-title mb-3 border-bottom pb-2">Student Information</h2>
+          <div class="space-y-2 small">
+            <div class="d-flex justify-content-between"><span class="info-label">Roll No</span><span class="info-value">:</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Gender</span><span class="info-value">Male</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Date Of Birth</span><span class="info-value">28 Oct, 2016</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Blood Group</span><span class="info-value">B+</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Religion</span><span class="info-value">Islam</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Class</span><span class="info-value">Two</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Section</span><span class="info-value">Boys (A)</span></div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow-sm border">
+          <h2 class="section-title mb-4 border-bottom pb-2">Guardian Information</h2>
+          <div class="row g-4 text-center">
+            <div class="col-4">
+              <div class="guardian-avatar rounded-circle mx-auto d-flex align-items-center justify-content-center mb-2">
+                <i class="fa-solid fa-user" style="font-size: 30px"></i>
+              </div>
+              <p class="guardian-name mb-0">A.S.M. Sayeed Uddin</p>
+              <p class="guardian-relation mb-0">Father</p>
+              <p class="guardian-phone mb-0">01915878800</p>
+            </div>
+            <div class="col-4">
+              <div class="guardian-avatar rounded-circle mx-auto d-flex align-items-center justify-content-center mb-2">
+                <i class="fa-solid fa-user" style="font-size: 30px"></i>
+              </div>
+              <p class="guardian-name mb-0">Amina Rahmani</p>
+              <p class="guardian-relation mb-0">Mother</p>
+              <p class="guardian-phone mb-0">01789640545</p>
+            </div>
+            <div class="col-4">
+              <div class="guardian-avatar rounded-circle mx-auto d-flex align-items-center justify-content-center mb-2">
+                <i class="fa-solid fa-user" style="font-size: 30px"></i>
+              </div>
+              <p class="guardian-name mb-0">Sarowar Khan</p>
+              <p class="guardian-relation mb-0">Guardian</p>
+              <p class="guardian-phone mb-0">01796699378</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow-sm border">
+          <h2 class="section-title mb-3 border-bottom pb-2">Contact Information</h2>
+          <div class="space-y-3 small">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-phone contact-icon me-3"></i>
+              <div>
+                <p class="info-value mb-0">01915878800 <span class="text-muted" style="font-size: 0.75rem">(Father)</span></p>
+                <p class="info-value mb-0">01789640545 <span class="text-muted" style="font-size: 0.75rem">(Mother)</span></p>
+                <p class="info-value mb-0">01789640545 <span class="text-muted" style="font-size: 0.75rem">(SMS)</span></p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start">
+              <i class="fa-solid fa-location-dot contact-icon me-3 pt-1"></i>
+              <p class="info-value mb-0">House-21, Lane-08, Road-Purbachal Road, Badda, Dhaka</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow-sm border">
+          <h2 class="section-title mb-3 border-bottom pb-2">Personal Details</h2>
+          <div class="space-y-2 small">
+            <div class="d-flex justify-content-between"><span class="info-label">Date of Birth</span><span class="info-value">2016-10-28</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Age</span><span class="info-value">8 years 9 months 13 days</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Birth Reg No.</span><span class="info-value">:</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Gender</span><span class="info-value">Male</span></div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow-sm border">
+          <h2 class="section-title mb-3 border-bottom pb-2">Family Details</h2>
+          <div class="space-y-2 small">
+            <div class="d-flex justify-content-between"><span class="info-label">Father's Name</span><span class="info-value">A.S.M. Sayeed Uddin</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Father's NID</span><span class="info-value">:</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Father's Occupation</span><span class="info-value">বাংলা</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Mother's Name</span><span class="info-value">Amina Rahmani</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Mother's Occupation</span><span class="info-value">গৃহিণী</span></div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow-sm border">
+          <h2 class="section-title mb-3 border-bottom pb-2">Admission Information</h2>
+          <div class="space-y-2 small">
+            <div class="d-flex justify-content-between"><span class="info-label">Admitted To Class</span><span class="info-value">Two</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Admitted On</span><span class="info-value">01 Jan, 2023</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Years in this institution</span><span class="info-value">1</span></div>
+            <div class="d-flex justify-content-between"><span class="info-label">Residential Status</span><span class="info-value">Non-Resident</span></div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow-sm border">
+          <h2 class="section-title mb-3 border-bottom pb-2">Subject Information</h2>
+          <div class="row g-2">
+            <div class="col-6">
+              <ul class="list-unstyled small text-secondary space-y-1">
+                <li>• Quran (Ammapara)</li>
+                <li>• Arabic (Standard-2)</li>
+                <li>• Islamic Studies</li>
+                <li>• Bangla</li>
+                <li>• Mathematics</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled small text-secondary space-y-1">
+                <li>• English-1</li>
+                <li>• English-2</li>
+                <li>• Drawing</li>
+                <li>• Adab-Akhlaq & CA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4 g-2 pb-2">
+          <div class="col-12">
+            <a href="#" class="btn custom-btn w-100 p-3 text-center shadow-sm">Sibling Information</a>
+          </div>
+          <div class="col-12">
+            <a href="#" class="btn custom-btn w-100 p-3 text-center shadow-sm">Previous Level History</a>
+          </div>
+        </div>
+      </main>
+
+      <nav class="bottom-nav d-flex align-items-center">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-around">
+            <a href="index.html" class="nav-item d-flex flex-column align-items-center text-decoration-none">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+            <a href="#" class="nav-item d-flex flex-column align-items-center text-decoration-none">
+              <i class="fa-solid fa-history"></i>
+              <span>History</span>
+            </a>
+            <a href="profile.html" class="nav-item active d-flex flex-column align-items-center text-decoration-none">
+              <i class="fa-solid fa-circle-user"></i>
+              <span>Account</span>
+            </a>
+            <a href="#" class="nav-item d-flex flex-column align-items-center text-decoration-none">
+              <i class="fa-solid fa-inbox"></i>
+              <span>Inbox</span>
+            </a>
+            <a href="more.html" class="nav-item d-flex flex-column align-items-center text-decoration-none">
+              <i class="fa-solid fa-bars"></i>
+              <span>More</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js" integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

@@ -3,4 +3,139 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+}
+
+.app-container {
+  max-width: 384px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.header-bg {
+  background-color: #003867;
+}
+
+.main-bg {
+  background-color: #f9fafb;
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  color: #eab308;
+}
+
+.student-id {
+  background-color: white;
+  color: #003867;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.section-title {
+  color: #003867;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.guardian-avatar {
+  width: 64px;
+  height: 64px;
+  background-color: #e5e7eb;
+  color: #6b7280;
+}
+
+.guardian-name {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.guardian-relation {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.guardian-phone {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.contact-icon {
+  width: 16px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.info-label {
+  color: #6b7280;
+}
+
+.info-value {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 384px;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  height: 64px;
+}
+
+.nav-item {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.nav-item.active {
+  color: #003867;
+  font-weight: 600;
+}
+
+.nav-item i {
+  font-size: 20px;
+}
+
+.nav-item.active i {
+  font-size: 24px;
+}
+
+.custom-btn {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  font-weight: 600;
+}
+
+.custom-btn:hover {
+  background-color: #f9fafb;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+.space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.space-y-1 > * + * {
+  margin-top: 0.25rem;
 }
